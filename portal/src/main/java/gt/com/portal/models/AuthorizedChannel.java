@@ -20,7 +20,7 @@ import lombok.Data;
 @Entity
 @Data
 @Table(name = "Canal_Autorizado")
-public class AuthorizedChannels implements Serializable {
+public class AuthorizedChannel implements Serializable {
 
     @Id
     @Column(name = "id")
