@@ -19,6 +19,6 @@ import org.springframework.stereotype.Repository;
 public interface AuthorizedChannelRepository extends JpaRepository<AuthorizedChannel, Integer>{
 
     @Query(value = "SELECT * FROM Canal_Autorizado WHERE Canal_Autorizado.Distribuidor_id = :id", nativeQuery = true)
-    ArrayList<AuthorizedChannel> getProductsByDistribuitor(@Param("id") Integer id);
+    ArrayList<AuthorizedChannel> getAuthorizedChannelsByDistribuitor(@Param("id") Integer id);
 
 }
